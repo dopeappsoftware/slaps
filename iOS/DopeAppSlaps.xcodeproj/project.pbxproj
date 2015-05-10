@@ -1,0 +1,458 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E71C13031AFE95EA00091746 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71C13021AFE95EA00091746 /* SignUpViewController.swift */; };
+		E71C13051AFE962B00091746 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71C13041AFE962B00091746 /* LoginViewController.swift */; };
+		E7A162F41AFE83BF004CFD47 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A162F31AFE83BF004CFD47 /* AppDelegate.swift */; };
+		E7A162F71AFE83BF004CFD47 /* DopeAppSlaps.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E7A162F51AFE83BF004CFD47 /* DopeAppSlaps.xcdatamodeld */; };
+		E7A162F91AFE83BF004CFD47 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A162F81AFE83BF004CFD47 /* HomeViewController.swift */; };
+		E7A162FC1AFE83BF004CFD47 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7A162FA1AFE83BF004CFD47 /* Main.storyboard */; };
+		E7A162FE1AFE83BF004CFD47 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7A162FD1AFE83BF004CFD47 /* Images.xcassets */; };
+		E7A163011AFE83C0004CFD47 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7A162FF1AFE83C0004CFD47 /* LaunchScreen.xib */; };
+		E7A1630D1AFE83C0004CFD47 /* DopeAppSlapsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A1630C1AFE83C0004CFD47 /* DopeAppSlapsTests.swift */; };
+		E7A163171AFE840A004CFD47 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A163161AFE840A004CFD47 /* SwiftyJSON.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E7A163071AFE83C0004CFD47 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E7A162E61AFE83BB004CFD47 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E7A162ED1AFE83BE004CFD47;
+			remoteInfo = DopeAppSlaps;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E71C13021AFE95EA00091746 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignUpViewController.swift; path = ../SignUpViewController.swift; sourceTree = "<group>"; };
+		E71C13041AFE962B00091746 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = ../LoginViewController.swift; sourceTree = "<group>"; };
+		E7A162EE1AFE83BF004CFD47 /* DopeAppSlaps.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DopeAppSlaps.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7A162F21AFE83BF004CFD47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E7A162F31AFE83BF004CFD47 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E7A162F61AFE83BF004CFD47 /* DopeAppSlaps.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DopeAppSlaps.xcdatamodel; sourceTree = "<group>"; };
+		E7A162F81AFE83BF004CFD47 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		E7A162FB1AFE83BF004CFD47 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E7A162FD1AFE83BF004CFD47 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		E7A163001AFE83C0004CFD47 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		E7A163061AFE83C0004CFD47 /* DopeAppSlapsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DopeAppSlapsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7A1630B1AFE83C0004CFD47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E7A1630C1AFE83C0004CFD47 /* DopeAppSlapsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DopeAppSlapsTests.swift; sourceTree = "<group>"; };
+		E7A163161AFE840A004CFD47 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E7A162EB1AFE83BE004CFD47 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E7A163031AFE83C0004CFD47 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E7A162E51AFE83BB004CFD47 = {
+			isa = PBXGroup;
+			children = (
+				E7A162F01AFE83BF004CFD47 /* DopeAppSlaps */,
+				E7A163091AFE83C0004CFD47 /* DopeAppSlapsTests */,
+				E7A162EF1AFE83BF004CFD47 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E7A162EF1AFE83BF004CFD47 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E7A162EE1AFE83BF004CFD47 /* DopeAppSlaps.app */,
+				E7A163061AFE83C0004CFD47 /* DopeAppSlapsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E7A162F01AFE83BF004CFD47 /* DopeAppSlaps */ = {
+			isa = PBXGroup;
+			children = (
+				E71C13041AFE962B00091746 /* LoginViewController.swift */,
+				E71C13021AFE95EA00091746 /* SignUpViewController.swift */,
+				E7A162F31AFE83BF004CFD47 /* AppDelegate.swift */,
+				E7A163161AFE840A004CFD47 /* SwiftyJSON.swift */,
+				E7A162F81AFE83BF004CFD47 /* HomeViewController.swift */,
+				E7A162FA1AFE83BF004CFD47 /* Main.storyboard */,
+				E7A162FD1AFE83BF004CFD47 /* Images.xcassets */,
+				E7A162FF1AFE83C0004CFD47 /* LaunchScreen.xib */,
+				E7A162F51AFE83BF004CFD47 /* DopeAppSlaps.xcdatamodeld */,
+				E7A162F11AFE83BF004CFD47 /* Supporting Files */,
+			);
+			path = DopeAppSlaps;
+			sourceTree = "<group>";
+		};
+		E7A162F11AFE83BF004CFD47 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E7A162F21AFE83BF004CFD47 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E7A163091AFE83C0004CFD47 /* DopeAppSlapsTests */ = {
+			isa = PBXGroup;
+			children = (
+				E7A1630C1AFE83C0004CFD47 /* DopeAppSlapsTests.swift */,
+				E7A1630A1AFE83C0004CFD47 /* Supporting Files */,
+			);
+			path = DopeAppSlapsTests;
+			sourceTree = "<group>";
+		};
+		E7A1630A1AFE83C0004CFD47 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E7A1630B1AFE83C0004CFD47 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E7A162ED1AFE83BE004CFD47 /* DopeAppSlaps */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E7A163101AFE83C0004CFD47 /* Build configuration list for PBXNativeTarget "DopeAppSlaps" */;
+			buildPhases = (
+				E7A162EA1AFE83BE004CFD47 /* Sources */,
+				E7A162EB1AFE83BE004CFD47 /* Frameworks */,
+				E7A162EC1AFE83BE004CFD47 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DopeAppSlaps;
+			productName = DopeAppSlaps;
+			productReference = E7A162EE1AFE83BF004CFD47 /* DopeAppSlaps.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E7A163051AFE83C0004CFD47 /* DopeAppSlapsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E7A163131AFE83C0004CFD47 /* Build configuration list for PBXNativeTarget "DopeAppSlapsTests" */;
+			buildPhases = (
+				E7A163021AFE83C0004CFD47 /* Sources */,
+				E7A163031AFE83C0004CFD47 /* Frameworks */,
+				E7A163041AFE83C0004CFD47 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E7A163081AFE83C0004CFD47 /* PBXTargetDependency */,
+			);
+			name = DopeAppSlapsTests;
+			productName = DopeAppSlapsTests;
+			productReference = E7A163061AFE83C0004CFD47 /* DopeAppSlapsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E7A162E61AFE83BB004CFD47 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = DopeAppSoftware;
+				TargetAttributes = {
+					E7A162ED1AFE83BE004CFD47 = {
+						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = REWU4BTKLA;
+					};
+					E7A163051AFE83C0004CFD47 = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = E7A162ED1AFE83BE004CFD47;
+					};
+				};
+			};
+			buildConfigurationList = E7A162E91AFE83BB004CFD47 /* Build configuration list for PBXProject "DopeAppSlaps" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E7A162E51AFE83BB004CFD47;
+			productRefGroup = E7A162EF1AFE83BF004CFD47 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E7A162ED1AFE83BE004CFD47 /* DopeAppSlaps */,
+				E7A163051AFE83C0004CFD47 /* DopeAppSlapsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E7A162EC1AFE83BE004CFD47 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E7A162FC1AFE83BF004CFD47 /* Main.storyboard in Resources */,
+				E7A163011AFE83C0004CFD47 /* LaunchScreen.xib in Resources */,
+				E7A162FE1AFE83BF004CFD47 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E7A163041AFE83C0004CFD47 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E7A162EA1AFE83BE004CFD47 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E71C13051AFE962B00091746 /* LoginViewController.swift in Sources */,
+				E71C13031AFE95EA00091746 /* SignUpViewController.swift in Sources */,
+				E7A162F91AFE83BF004CFD47 /* HomeViewController.swift in Sources */,
+				E7A162F41AFE83BF004CFD47 /* AppDelegate.swift in Sources */,
+				E7A162F71AFE83BF004CFD47 /* DopeAppSlaps.xcdatamodeld in Sources */,
+				E7A163171AFE840A004CFD47 /* SwiftyJSON.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E7A163021AFE83C0004CFD47 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E7A1630D1AFE83C0004CFD47 /* DopeAppSlapsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E7A163081AFE83C0004CFD47 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E7A162ED1AFE83BE004CFD47 /* DopeAppSlaps */;
+			targetProxy = E7A163071AFE83C0004CFD47 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E7A162FA1AFE83BF004CFD47 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E7A162FB1AFE83BF004CFD47 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E7A162FF1AFE83C0004CFD47 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E7A163001AFE83C0004CFD47 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E7A1630E1AFE83C0004CFD47 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E7A1630F1AFE83C0004CFD47 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E7A163111AFE83C0004CFD47 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = DopeAppSlaps/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E7A163121AFE83C0004CFD47 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = DopeAppSlaps/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		E7A163141AFE83C0004CFD47 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = DopeAppSlapsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DopeAppSlaps.app/DopeAppSlaps";
+			};
+			name = Debug;
+		};
+		E7A163151AFE83C0004CFD47 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = DopeAppSlapsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DopeAppSlaps.app/DopeAppSlaps";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E7A162E91AFE83BB004CFD47 /* Build configuration list for PBXProject "DopeAppSlaps" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E7A1630E1AFE83C0004CFD47 /* Debug */,
+				E7A1630F1AFE83C0004CFD47 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E7A163101AFE83C0004CFD47 /* Build configuration list for PBXNativeTarget "DopeAppSlaps" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E7A163111AFE83C0004CFD47 /* Debug */,
+				E7A163121AFE83C0004CFD47 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E7A163131AFE83C0004CFD47 /* Build configuration list for PBXNativeTarget "DopeAppSlapsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E7A163141AFE83C0004CFD47 /* Debug */,
+				E7A163151AFE83C0004CFD47 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		E7A162F51AFE83BF004CFD47 /* DopeAppSlaps.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				E7A162F61AFE83BF004CFD47 /* DopeAppSlaps.xcdatamodel */,
+			);
+			currentVersion = E7A162F61AFE83BF004CFD47 /* DopeAppSlaps.xcdatamodel */;
+			path = DopeAppSlaps.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = E7A162E61AFE83BB004CFD47 /* Project object */;
+}
