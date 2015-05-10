@@ -17,6 +17,7 @@
 		E7A163011AFE83C0004CFD47 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7A162FF1AFE83C0004CFD47 /* LaunchScreen.xib */; };
 		E7A1630D1AFE83C0004CFD47 /* DopeAppSlapsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A1630C1AFE83C0004CFD47 /* DopeAppSlapsTests.swift */; };
 		E7A163171AFE840A004CFD47 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A163161AFE840A004CFD47 /* SwiftyJSON.swift */; };
+		E7CE6EBC1AFF2E9400DA13A5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CE6EBB1AFF2E9400DA13A5 /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		E7A1630B1AFE83C0004CFD47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E7A1630C1AFE83C0004CFD47 /* DopeAppSlapsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DopeAppSlapsTests.swift; sourceTree = "<group>"; };
 		E7A163161AFE840A004CFD47 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
+		E7CE6EBB1AFF2E9400DA13A5 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +89,7 @@
 			children = (
 				E71C13041AFE962B00091746 /* LoginViewController.swift */,
 				E71C13021AFE95EA00091746 /* SignUpViewController.swift */,
+				E7CE6EBB1AFF2E9400DA13A5 /* ViewController.swift */,
 				E7A162F31AFE83BF004CFD47 /* AppDelegate.swift */,
 				E7A163161AFE840A004CFD47 /* SwiftyJSON.swift */,
 				E7A162F81AFE83BF004CFD47 /* HomeViewController.swift */,
@@ -229,6 +232,7 @@
 				E71C13031AFE95EA00091746 /* SignUpViewController.swift in Sources */,
 				E7A162F91AFE83BF004CFD47 /* HomeViewController.swift in Sources */,
 				E7A162F41AFE83BF004CFD47 /* AppDelegate.swift in Sources */,
+				E7CE6EBC1AFF2E9400DA13A5 /* ViewController.swift in Sources */,
 				E7A162F71AFE83BF004CFD47 /* DopeAppSlaps.xcdatamodeld in Sources */,
 				E7A163171AFE840A004CFD47 /* SwiftyJSON.swift in Sources */,
 			);
