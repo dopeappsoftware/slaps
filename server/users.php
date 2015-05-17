@@ -1,9 +1,4 @@
 <?php
-$db = new mysqli('127.0.0.1', 'root', 'max&max9293', 'slaps');
-if($db->connect_errno > 0){
-	die('Unable to connect to database [' . $db->connect_error . ']');
-}
-
 $method = $_POST["method"];
 
 if ($method == "createUser"){
