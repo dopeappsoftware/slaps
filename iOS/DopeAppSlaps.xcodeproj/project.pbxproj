@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		910797841B12525A0093126B /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910797831B12525A0093126B /* SignUpViewController.swift */; };
 		E7065FF41B026DF700337996 /* SignUpStep1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7065FF31B026DF700337996 /* SignUpStep1ViewController.swift */; };
 		E71C13051AFE962B00091746 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71C13041AFE962B00091746 /* LoginViewController.swift */; };
 		E7A162F41AFE83BF004CFD47 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A162F31AFE83BF004CFD47 /* AppDelegate.swift */; };
@@ -30,6 +31,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		910797831B12525A0093126B /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		E7065FF31B026DF700337996 /* SignUpStep1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignUpStep1ViewController.swift; path = ../SignUpStep1ViewController.swift; sourceTree = "<group>"; };
 		E71C13041AFE962B00091746 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = ../LoginViewController.swift; sourceTree = "<group>"; };
 		E7A162EE1AFE83BF004CFD47 /* DopeAppSlaps.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DopeAppSlaps.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -87,6 +89,7 @@
 			children = (
 				E71C13041AFE962B00091746 /* LoginViewController.swift */,
 				E7065FF31B026DF700337996 /* SignUpStep1ViewController.swift */,
+				910797831B12525A0093126B /* SignUpViewController.swift */,
 				E7A162F31AFE83BF004CFD47 /* AppDelegate.swift */,
 				E7A163161AFE840A004CFD47 /* SwiftyJSON.swift */,
 				E7A162F81AFE83BF004CFD47 /* HomeViewController.swift */,
@@ -226,6 +229,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E71C13051AFE962B00091746 /* LoginViewController.swift in Sources */,
+				910797841B12525A0093126B /* SignUpViewController.swift in Sources */,
 				E7A162F91AFE83BF004CFD47 /* HomeViewController.swift in Sources */,
 				E7A162F41AFE83BF004CFD47 /* AppDelegate.swift in Sources */,
 				E7A162F71AFE83BF004CFD47 /* DopeAppSlaps.xcdatamodeld in Sources */,
