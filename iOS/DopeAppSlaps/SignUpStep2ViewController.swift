@@ -1,54 +1,43 @@
 //
-//  SignUpStep1ViewController.swift
+//  SignUpStep2ViewController.swift
 //  DopeAppSlaps
 //
-//  Created by student1 on 5/12/15.
+//  Created by Maximillian Parelius on 5/24/15.
 //  Copyright (c) 2015 DopeAppSoftware. All rights reserved.
 //
 
 import UIKit
 
-class SignUpStep1ViewController: UIViewController {
+class SignUpStep2ViewController: UIViewController {
 
-    @IBOutlet weak var txtEmail: UITextField!
-    @IBOutlet weak var txtPassword: UITextField!
-    @IBOutlet weak var txtConfirmPassword: UITextField!
+    @IBOutlet weak var txtUsername: UITextField!
+    
+    var email: String!
+    var password: String!
+    var did: String!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        // Do any additional setup after loading the view.
     }
-    
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func sighUpTapped(sender: AnyObject) {
-        var email:NSString = txtEmail.text as NSString
-        var password:NSString = txtPassword.text as NSString
-        var confirm_password:NSString = txtConfirmPassword.text as NSString
-        if (email.isEqualToString("") || password.isEqualToString("")) {
+    @IBAction func nextPressed(sender: AnyObject) {
+        var username:NSString = txtUsername.text as NSString
+        if (username.isEqualToString("")) {
             var alertView:UIAlertView = UIAlertView()
-            alertView.title = "Sign Up Failed!"
-            alertView.message = "Please enter email and password"
-            alertView.delegate = self
-            alertView.addButtonWithTitle("OK")
-            alertView.show()
-        } else if (!password.isEqual(confirm_password)) {
-            var alertView:UIAlertView = UIAlertView()
-            alertView.title = "Sign Up Failed!"
-            alertView.message = "Passwords do not match"
-            alertView.delegate = self
-            alertView.addButtonWithTitle("OK")
-            alertView.show()
-        } else if (!isValidEmail(email)) {
-            var alertView: UIAlertView = UIAlertView()
-            alertView.title = "Sign Up Failed!"
-            alertView.message = "Invalid email"
+            alertView.title = "Invalid Username"
+            alertView.message = "Please enter a username"
             alertView.delegate = self
             alertView.addButtonWithTitle("OK")
             alertView.show()
         } else {
-            var post:NSString = "method=validateEmail&email=\(email)"
+            var post:NSString = "method=validateUsername&username=\(username)"
             NSLog("PostData: %@",post);
             var url:NSURL = NSURL(string: "http://52.24.127.193/slaps_repo/server/rpc.php")!
             var postData:NSData = post.dataUsingEncoding(NSASCIIStringEncoding)!
@@ -63,21 +52,22 @@ class SignUpStep1ViewController: UIViewController {
             var response: NSURLResponse?
             var urlData: NSData? = NSURLConnection.sendSynchronousRequest(request, returningResponse:&response, error:&reponseError)
             if (urlData != nil) {
-                let res = response as NSHTTPURLResponse!
-                NSLog("Response code: %ld", res.statusCode)
+                let res = response as NSHTTPURLResponse!;
+                NSLog("Response code: %ld", res.statusCode);
                 if (res.statusCode >= 200 && res.statusCode < 300) {
                     var responseData:NSString  = NSString(data:urlData!, encoding:NSUTF8StringEncoding)!
-                    NSLog("Response ==> %@", responseData)
+                    NSLog("Response ==> %@", responseData);
                     var error: NSError?
+                    //let jsonData:NSDictionary = NSJSONSerialization.JSONObjectWithData(urlData!, options:NSJSONReadingOptions.MutableContainers , error: &error) as NSDictionary
                     let jsonData:JSON = JSON(data: urlData!)
                     let success:NSInteger = jsonData["success"].intValue
                     NSLog("Success: %ld", success);
                     if(success == 1) {
                         NSLog("Sign Up SUCCESS");
-                        self.performSegueWithIdentifier("stepTwo", sender: self)
+                        self.performSegueWithIdentifier("stepThree", sender: self)
                     } else {
                         var error_msg:NSString
-                        if let err = jsonData["message"].string {
+                        if let err = jsonData["errorMessage"].string {
                             error_msg = err
                         } else {
                             error_msg = "Unknown Error"
@@ -110,11 +100,7 @@ class SignUpStep1ViewController: UIViewController {
             }
         }
     }
-    
-    @IBAction func loginTapped(sender: AnyObject) {
-        self.dismissViewControllerAnimated(true, completion: nil)
-    }
-    
+
     func textFieldShouldReturn(textField: UITextField!) -> Bool {
         textField.resignFirstResponder()
         return true
@@ -123,23 +109,17 @@ class SignUpStep1ViewController: UIViewController {
     override func touchesBegan(touches: NSSet, withEvent event: UIEvent) {
         self.view.endEditing(true)
     }
-    
-    func isValidEmail(testStr:String) -> Bool {
-        let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,4}"
-        
-        let emailTest = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
-        return emailTest!.evaluateWithObject(testStr)
-    }
-    
+
     // MARK: - Navigation
-    
+
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if segue.identifier == "stepTwo" {
-            if let destVC = segue.destinationViewController as? SignUpStep2ViewController {
-                destVC.did = UIDevice.currentDevice().identifierForVendor.UUIDString
-                destVC.email = self.txtEmail.text
-                destVC.password = self.txtPassword.text
+        if segue.identifier == "stepThree" {
+            if let destVC = segue.destinationViewController as? SignUpStep3ViewController {
+                destVC.did = self.did
+                destVC.email = self.email
+                destVC.password = self.password
+                destVC.username = self.txtUsername.text
             }
         }
     }

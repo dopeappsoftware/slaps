@@ -12,6 +12,9 @@ class LoginViewController: UIViewController {
 
     @IBOutlet weak var txtUsername: UITextField!
     @IBOutlet weak var txtPassword: UITextField!
+    
+    var token: String!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -30,7 +33,9 @@ class LoginViewController: UIViewController {
     @IBAction func signinTapped(sender: AnyObject) {
         var username:NSString = txtUsername.text
         var password:NSString = txtPassword.text
-        if ( username.isEqualToString("") || password.isEqualToString("") ) {
+        self.token = "\(username)\(password)"
+        self.token = self.token.sha1()
+        if (username.isEqualToString("") || password.isEqualToString("")) {
             var alertView:UIAlertView = UIAlertView()
             alertView.title = "Sign in Failed!"
             alertView.message = "Please enter Username and Password"
@@ -38,9 +43,9 @@ class LoginViewController: UIViewController {
             alertView.addButtonWithTitle("OK")
             alertView.show()
         } else {
-            var post:NSString = "method=validateUser&username=\(username)&password=\(password)"
+            var post:NSString = "method=login&token=\(token)"
             NSLog("PostData: %@",post);
-            var url:NSURL = NSURL(string: "http://52.24.127.193/slaps/mobile.php")!
+            var url:NSURL = NSURL(string: "http://52.24.127.193/slaps_repo/server/rpc.php")!
             var postData:NSData = post.dataUsingEncoding(NSASCIIStringEncoding)!
             var postLength:NSString = String( postData.length )
             var request:NSMutableURLRequest = NSMutableURLRequest(URL: url)
@@ -52,17 +57,16 @@ class LoginViewController: UIViewController {
             var reponseError: NSError?
             var response: NSURLResponse?
             var urlData: NSData? = NSURLConnection.sendSynchronousRequest(request, returningResponse:&response, error:&reponseError)
-            if ( urlData != nil ) {
+            if (urlData != nil) {
                 let res = response as NSHTTPURLResponse!;
                 NSLog("Response code: %ld", res.statusCode);
                 if (res.statusCode >= 200 && res.statusCode < 300)
                 {
-                    var responseData:NSString  = NSString(data:urlData!, encoding:NSUTF8StringEncoding)!
+                    var responseData:NSString = NSString(data:urlData!, encoding:NSUTF8StringEncoding)!
                     NSLog("Response ==> %@", responseData);
                     var error: NSError?
-                    let jsonData:NSDictionary = NSJSONSerialization.JSONObjectWithData(urlData!, options:NSJSONReadingOptions.MutableContainers , error: &error) as NSDictionary
-                    let success:NSInteger = jsonData.valueForKey("success") as NSInteger
-                    //[jsonData[@"success"] integerValue];
+                    let jsonData:JSON = JSON(data: urlData!)
+                    let success:NSInteger = jsonData["success"].intValue
                     NSLog("Success: %ld", success)
                     if(success == 1)
                     {
@@ -70,12 +74,13 @@ class LoginViewController: UIViewController {
                         var prefs:NSUserDefaults = NSUserDefaults.standardUserDefaults()
                         prefs.setObject(username, forKey: "USERNAME")
                         prefs.setInteger(1, forKey: "ISLOGGEDIN")
+                        prefs.setObject(self.token, forKey: "TOKEN")
                         prefs.synchronize()
                         self.dismissViewControllerAnimated(true, completion: nil)
                     } else {
                         var error_msg:NSString
-                        if jsonData["errorMessage"] as? NSString != nil {
-                            error_msg = jsonData["errorMessage"] as NSString
+                        if let err = jsonData["message"].string {
+                            error_msg = err
                         } else {
                             error_msg = "Unknown Error"
                         }
