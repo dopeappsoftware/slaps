@@ -1,12 +1,10 @@
 <?php
-echo 'included DB<br>';
 
 class databaseConnection {
 
 	private $database = 'Error';
 
 	public function __construct() {
-		echo 'into dbcon constructor<br>';
 		if (!(include './config/database.conf.php'))
 			exit('Error. No database config file.');
 		if (empty($DATABASE_CONF['host']))
@@ -25,7 +23,6 @@ class databaseConnection {
 	}
 
 	public function getDatabase() {
-		echo 'into dbcon function<br>';
 		return $this->database;
 	}
 }
