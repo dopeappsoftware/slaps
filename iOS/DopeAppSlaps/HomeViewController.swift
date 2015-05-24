@@ -16,7 +16,7 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         //refreshData()
-        
+        println(UIDevice.currentDevice().identifierForVendor.UUIDString)
     }
     
     override func viewDidAppear(animated: Bool) {
