@@ -7,7 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E71C13031AFE95EA00091746 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71C13021AFE95EA00091746 /* SignUpViewController.swift */; };
+		91406C981B1259660075D76F /* SignUpStep2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91406C971B1259660075D76F /* SignUpStep2ViewController.swift */; };
+		91406C9A1B125E880075D76F /* SignUpStep3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91406C991B125E880075D76F /* SignUpStep3ViewController.swift */; };
+		91406C9C1B12613B0075D76F /* SignUpStep4ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91406C9B1B12613B0075D76F /* SignUpStep4ViewController.swift */; };
+		91406C9E1B1263F50075D76F /* SignUpStep5ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91406C9D1B1263F50075D76F /* SignUpStep5ViewController.swift */; };
+		E7065FF41B026DF700337996 /* SignUpStep1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7065FF31B026DF700337996 /* SignUpStep1ViewController.swift */; };
 		E71C13051AFE962B00091746 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71C13041AFE962B00091746 /* LoginViewController.swift */; };
 		E7A162F41AFE83BF004CFD47 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A162F31AFE83BF004CFD47 /* AppDelegate.swift */; };
 		E7A162F71AFE83BF004CFD47 /* DopeAppSlaps.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E7A162F51AFE83BF004CFD47 /* DopeAppSlaps.xcdatamodeld */; };
@@ -30,7 +34,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		E71C13021AFE95EA00091746 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignUpViewController.swift; path = ../SignUpViewController.swift; sourceTree = "<group>"; };
+		91406C971B1259660075D76F /* SignUpStep2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpStep2ViewController.swift; sourceTree = "<group>"; };
+		91406C991B125E880075D76F /* SignUpStep3ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpStep3ViewController.swift; sourceTree = "<group>"; };
+		91406C9B1B12613B0075D76F /* SignUpStep4ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpStep4ViewController.swift; sourceTree = "<group>"; };
+		91406C9D1B1263F50075D76F /* SignUpStep5ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpStep5ViewController.swift; sourceTree = "<group>"; };
+		91406C9F1B1272BC0075D76F /* DopeAppSlaps-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DopeAppSlaps-Bridging-Header.h"; sourceTree = "<group>"; };
+		E7065FF31B026DF700337996 /* SignUpStep1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignUpStep1ViewController.swift; path = ../SignUpStep1ViewController.swift; sourceTree = "<group>"; };
 		E71C13041AFE962B00091746 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = ../LoginViewController.swift; sourceTree = "<group>"; };
 		E7A162EE1AFE83BF004CFD47 /* DopeAppSlaps.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DopeAppSlaps.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7A162F21AFE83BF004CFD47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -86,11 +95,15 @@
 			isa = PBXGroup;
 			children = (
 				E71C13041AFE962B00091746 /* LoginViewController.swift */,
-				E71C13021AFE95EA00091746 /* SignUpViewController.swift */,
+				E7065FF31B026DF700337996 /* SignUpStep1ViewController.swift */,
+				91406C971B1259660075D76F /* SignUpStep2ViewController.swift */,
+				91406C991B125E880075D76F /* SignUpStep3ViewController.swift */,
 				E7A162F31AFE83BF004CFD47 /* AppDelegate.swift */,
 				E7A163161AFE840A004CFD47 /* SwiftyJSON.swift */,
 				E7A162F81AFE83BF004CFD47 /* HomeViewController.swift */,
 				E7A162FA1AFE83BF004CFD47 /* Main.storyboard */,
+				91406C9B1B12613B0075D76F /* SignUpStep4ViewController.swift */,
+				91406C9D1B1263F50075D76F /* SignUpStep5ViewController.swift */,
 				E7A162FD1AFE83BF004CFD47 /* Images.xcassets */,
 				E7A162FF1AFE83C0004CFD47 /* LaunchScreen.xib */,
 				E7A162F51AFE83BF004CFD47 /* DopeAppSlaps.xcdatamodeld */,
@@ -102,6 +115,7 @@
 		E7A162F11AFE83BF004CFD47 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				91406C9F1B1272BC0075D76F /* DopeAppSlaps-Bridging-Header.h */,
 				E7A162F21AFE83BF004CFD47 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -226,11 +240,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				E71C13051AFE962B00091746 /* LoginViewController.swift in Sources */,
-				E71C13031AFE95EA00091746 /* SignUpViewController.swift in Sources */,
 				E7A162F91AFE83BF004CFD47 /* HomeViewController.swift in Sources */,
 				E7A162F41AFE83BF004CFD47 /* AppDelegate.swift in Sources */,
 				E7A162F71AFE83BF004CFD47 /* DopeAppSlaps.xcdatamodeld in Sources */,
+				91406C9E1B1263F50075D76F /* SignUpStep5ViewController.swift in Sources */,
+				E7065FF41B026DF700337996 /* SignUpStep1ViewController.swift in Sources */,
 				E7A163171AFE840A004CFD47 /* SwiftyJSON.swift in Sources */,
+				91406C9C1B12613B0075D76F /* SignUpStep4ViewController.swift in Sources */,
+				91406C9A1B125E880075D76F /* SignUpStep3ViewController.swift in Sources */,
+				91406C981B1259660075D76F /* SignUpStep2ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -355,11 +373,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = DopeAppSlaps/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "DopeAppSlaps/DopeAppSlaps-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -367,11 +388,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = DopeAppSlaps/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "DopeAppSlaps/DopeAppSlaps-Bridging-Header.h";
 			};
 			name = Release;
 		};
