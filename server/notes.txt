@@ -1,0 +1,10 @@
+config files to make:
+	database config to include username pass host etc
+
+include files to make:
+	file that holds strings for database queries
+	file that holds strings to retrieve post requests
+
+todo:
+	use php doc notation and create doc files
+	add mysqli error checking and print out	
